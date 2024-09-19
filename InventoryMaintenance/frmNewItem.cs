@@ -10,6 +10,7 @@ namespace InventoryMaintenance
 {
     public partial class frmNewItem : Form
     {
+        //Jonathan Sanjuan
         public frmNewItem()
         {
             InitializeComponent();
@@ -17,13 +18,14 @@ namespace InventoryMaintenance
 
         private InvItem invItem = null;
 
+        //Jonathan Sanjuan
         public InvItem GetNewItem()
         {
             LoadComboBox();
             this.ShowDialog();
             return invItem;
         }
-
+        //Jonathan Sanjuan
         private void LoadComboBox()
         {
             cboSizeOrManufacturer.Items.Clear();
@@ -44,7 +46,7 @@ namespace InventoryMaintenance
                 cboSizeOrManufacturer.Items.Add("Scotts");
             }
         }
-
+        //Jonathan Sanjuan
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (IsValidData())
@@ -55,14 +57,14 @@ namespace InventoryMaintenance
                 {
                     invItem = new Plant(Convert.ToInt32(txtItemNo.Text), txtDescription.Text, Convert.ToDecimal(txtPrice.Text), cboSizeOrManufacturer.Text);
                 }
-                else 
+                else
                 {
                     invItem = new Supply(Convert.ToInt32(txtItemNo.Text), txtDescription.Text, Convert.ToDecimal(txtPrice.Text), cboSizeOrManufacturer.Text);
                 }
 
             }
         }
-
+        //Jonathan Sanjuan
         private bool IsValidData()
         {
             return Validator.IsPresent(txtItemNo) &&
@@ -71,12 +73,12 @@ namespace InventoryMaintenance
                    Validator.IsPresent(txtPrice) &&
                    Validator.IsDecimal(txtPrice);
         }
-
+        //Jonathan Sanjuan
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        //Jonathan Sanjuan
         private void rdoPlant_CheckedChanged(object sender, EventArgs e)
         {
             if (rdoPlant.Checked)
@@ -89,5 +91,6 @@ namespace InventoryMaintenance
             }
             LoadComboBox();
         }
+
     }
 }

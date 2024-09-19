@@ -55,7 +55,7 @@
             // txtItemNo
             // 
             txtItemNo.Location = new System.Drawing.Point(201, 100);
-            txtItemNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            txtItemNo.Margin = new System.Windows.Forms.Padding(4);
             txtItemNo.Name = "txtItemNo";
             txtItemNo.Size = new System.Drawing.Size(193, 39);
             txtItemNo.TabIndex = 3;
@@ -74,7 +74,7 @@
             // txtDescription
             // 
             txtDescription.Location = new System.Drawing.Point(201, 162);
-            txtDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            txtDescription.Margin = new System.Windows.Forms.Padding(4);
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new System.Drawing.Size(349, 39);
             txtDescription.TabIndex = 5;
@@ -93,7 +93,7 @@
             // txtPrice
             // 
             txtPrice.Location = new System.Drawing.Point(201, 290);
-            txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            txtPrice.Margin = new System.Windows.Forms.Padding(4);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new System.Drawing.Size(193, 39);
             txtPrice.TabIndex = 9;
@@ -102,7 +102,7 @@
             // btnSave
             // 
             btnSave.Location = new System.Drawing.Point(201, 384);
-            btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnSave.Margin = new System.Windows.Forms.Padding(4);
             btnSave.Name = "btnSave";
             btnSave.Size = new System.Drawing.Size(145, 53);
             btnSave.TabIndex = 10;
@@ -113,7 +113,7 @@
             // btnCancel
             // 
             btnCancel.Location = new System.Drawing.Point(407, 384);
-            btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnCancel.Margin = new System.Windows.Forms.Padding(4);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new System.Drawing.Size(145, 53);
             btnCancel.TabIndex = 11;
@@ -126,7 +126,7 @@
             cboSizeOrManufacturer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cboSizeOrManufacturer.FormattingEnabled = true;
             cboSizeOrManufacturer.Location = new System.Drawing.Point(201, 226);
-            cboSizeOrManufacturer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            cboSizeOrManufacturer.Margin = new System.Windows.Forms.Padding(4);
             cboSizeOrManufacturer.Name = "cboSizeOrManufacturer";
             cboSizeOrManufacturer.Size = new System.Drawing.Size(236, 40);
             cboSizeOrManufacturer.TabIndex = 7;
@@ -146,7 +146,7 @@
             rdoPlant.AutoSize = true;
             rdoPlant.Checked = true;
             rdoPlant.Location = new System.Drawing.Point(201, 30);
-            rdoPlant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            rdoPlant.Margin = new System.Windows.Forms.Padding(4);
             rdoPlant.Name = "rdoPlant";
             rdoPlant.Size = new System.Drawing.Size(98, 36);
             rdoPlant.TabIndex = 0;
@@ -159,7 +159,7 @@
             // 
             rdoSupply.AutoSize = true;
             rdoSupply.Location = new System.Drawing.Point(357, 30);
-            rdoSupply.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            rdoSupply.Margin = new System.Windows.Forms.Padding(4);
             rdoSupply.Name = "rdoSupply";
             rdoSupply.Size = new System.Drawing.Size(118, 36);
             rdoSupply.TabIndex = 1;
@@ -187,7 +187,7 @@
             Controls.Add(txtItemNo);
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            Margin = new System.Windows.Forms.Padding(4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frmNewItem";

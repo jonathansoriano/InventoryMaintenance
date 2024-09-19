@@ -18,7 +18,7 @@ namespace InventoryMaintenance
         public int ItemNo { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-
+        //Jonathan Sanjuan
         public virtual string GetDisplayText() => $"{ItemNo}    {Description} ({Price:c})";
     }
 }

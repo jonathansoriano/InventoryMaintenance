@@ -16,7 +16,7 @@ namespace InventoryMaintenance
         }
 
         public string Manufacturer {  get; set; }
-
+        //Jonathan Sanjuan
         public override string GetDisplayText()
         {
             return $"{ItemNo} {Manufacturer} {Description} ({Price:c})";

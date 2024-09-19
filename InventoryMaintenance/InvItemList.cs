@@ -17,7 +17,7 @@ namespace InventoryMaintenance
         }
 
         public int Count => invItems.Count;
-
+        //Jonathan Sanjuan
         public InvItem this[int i]
         {
             get
@@ -40,40 +40,40 @@ namespace InventoryMaintenance
         }
 
         //public InvItem GetItemByIndex(int i) => invItems[i];
-
+        //Jonathan Sanjuan
         public void Add(InvItem invItem)
         {
             invItems.Add(invItem);
             Changed(this);
         }
-
+        //Jonathan Sanjuan
         public void Add(int itemNo, string description, decimal price)
         {
             InvItem i = new InvItem(itemNo, description, price);
             invItems.Add(i);
             Changed(this);
         }
-
+        //Jonathan Sanjuan
         public void Remove(InvItem invItem)
         {
             invItems.Remove(invItem);
             Changed(this);
         }
-
+        //Jonathan Sanjuan
         public static InvItemList operator +(InvItemList il, InvItem i)
         {
             il.Add(i);
             return il;
         }
-
+        //Jonathan Sanjuan
         public static InvItemList operator -(InvItemList il, InvItem i)
         {
             il.Remove(i);
             return il;
         }
-
+        //Jonathan Sanjuan
         public void Fill() => invItems = InvItemDB.GetItems();
-
+        //Jonathan Sanjuan
         public void Save() => InvItemDB.SaveItems(invItems);
     }
 }

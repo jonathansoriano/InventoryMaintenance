@@ -8,7 +8,7 @@ namespace InventoryMaintenance
     public static class InvItemDB
     {
         private const string Path = @"..\..\..\InventoryItems.xml";
-
+        //Jonathan Sanjuan
         public static List<InvItem> GetItems()
         {
             // create the list
@@ -55,14 +55,14 @@ namespace InventoryMaintenance
 
             return items;
         }
-
+        //Jonathan Sanjuan
         private static void ReadBase(XmlReader xmlIn, InvItem i)
         {
             i.ItemNo = xmlIn.ReadElementContentAsInt();
             i.Description = xmlIn.ReadElementContentAsString();
             i.Price = xmlIn.ReadElementContentAsDecimal();
         }
-
+        //Jonathan Sanjuan
         public static void SaveItems(List<InvItem> items)
         {
             // create the XmlWriterSettings object
@@ -104,7 +104,7 @@ namespace InventoryMaintenance
             // close the xmlWriter object
             xmlOut.Close();
         }
-
+        //Jonathan Sanjuan
         private static void WriteBase(InvItem item, XmlWriter xmlOut)
         {
             xmlOut.WriteElementString("ItemNo", Convert.ToString(item.ItemNo));

@@ -12,6 +12,7 @@ namespace InventoryMaintenance
 {
     public partial class frmInvMaint : Form
     {
+        //Jonathan Sanjuan
         public frmInvMaint()
         {
             InitializeComponent();
@@ -19,13 +20,14 @@ namespace InventoryMaintenance
 
         private InvItemList invItems = new InvItemList();
 
+        //Jonathan Sanjuan
         private void frmInvMaint_Load(object sender, EventArgs e)
         {
             invItems.Changed += new InvItemList.ChangeHandler(HandleChange);
             invItems.Fill();
             FillItemListBox();
         }
-
+        //Jonathan Sanjuan
         private void FillItemListBox()
         {
             InvItem item;
@@ -36,7 +38,7 @@ namespace InventoryMaintenance
                 lstItems.Items.Add(item.GetDisplayText());
             }
         }
-
+        //Jonathan Sanjuan
         private void btnAdd_Click(object sender, EventArgs e)
         {
             frmNewItem newItemForm = new frmNewItem();
@@ -46,7 +48,7 @@ namespace InventoryMaintenance
                 invItems += invItem;
             }
         }
-
+        //Jonathan Sanjuan
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int i = lstItems.SelectedIndex;
@@ -64,7 +66,7 @@ namespace InventoryMaintenance
                 }
             }
         }
-
+        //Jonathan Sanjuan
         private void HandleChange(InvItemList invItems)
         {
             invItems.Save();
